@@ -2,10 +2,10 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8" />
-    <title>Du học Hà Lan</title>
+    <title>Du học Phần Lan</title>
     <style>
         body {
-            background: url("bg-netherlands.jpg") no-repeat center/cover;
+            background: url("images/bg-finland.jpg") no-repeat center/cover;
             margin: 0;
             font-family: Arial;
             color: white;
@@ -17,41 +17,59 @@
             width: 100%;
             padding: 15px 40px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 60px;
             backdrop-filter: blur(10px);
             background: rgba(0,0,0,0.4);
         }
-        .navbar a { color:#ffdd57; margin-left:20px; text-decoration:none; }
-        .dropdown { position:relative; display:inline-block; }
+        .navbar a { color: #ffdd57; text-decoration: none; font-size: 20px; }
+        .dropdown { position: relative; }
         .dropdown-content {
-            position:absolute; display:none; background:rgba(0,0,0,0.7);
-            padding:10px; border-radius:8px;
+            display: none;
+            position: absolute;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 8px;
         }
-        .dropdown:hover .dropdown-content { display:block; }
-        .dropdown-content a { color:#fff; display:block; padding:5px 0; }
-        .content { margin-top:150px; padding:40px; max-width:800px; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { display:block; color:#fff; padding:5px 0; }
+
+        .content { margin-top: 150px; padding: 40px; max-width:800px; }
+
+        .uni-buttons button {
+            padding: 12px 20px;
+            margin: 10px 0;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
     <div class="navbar">
-        <div style="font-size:22px; font-weight:bold;">Du học Châu Âu</div>
-        <div>
-            <a href="index.html">Trang chủ</a>
-            <div class="dropdown">
-                <a href="#">Các nước ▼</a>
-                <div class="dropdown-content">
-                    <a href="germany.html">Du học Đức</a>
-                    <a href="france.html">Du học Pháp</a>
-                    <a href="netherlands.html">Du học Hà Lan</a>
-                </div>
+        <a href="index.html">Trang chủ</a>
+        <div class="dropdown">
+            <a href="#">Các nước ▼</a>
+            <div class="dropdown-content">
+                <a href="germany.html">Đức</a>
+                <a href="finland.html">Phần Lan</a>
+                <a href="france.html">Pháp</a>
             </div>
         </div>
     </div>
 
     <div class="content">
-        <h1>Du học Hà Lan</h1>
-        <p>Hà Lan có nền giáo dục hiện đại, nhiều chương trình quốc tế dạy bằng tiếng Anh.</p>
+        <h1>Du học Phần Lan</h1>
+        <p>Phần Lan nổi tiếng với nền giáo dục hiện đại, sáng tạo và chất lượng hàng đầu thế giới.</p>
+
+        <h2>Các trường đại học tiêu biểu</h2>
+        <div class="uni-buttons">
+            <button onclick="window.open('https://www.helsinki.fi/en')">Đại học Helsinki</button>
+            <button onclick="window.open('https://www.aalto.fi/en')">Đại học Aalto</button>
+            <button onclick="window.open('https://www.lut.fi/en')">Đại học LUT</button>
+        </div>
     </div>
 
 </body>
